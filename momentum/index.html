@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Momentum</title>
+</head>
+<body>
+    <form id="login-form" class="hidden">
+        <!-- 
+            2022-05-10
+            input이 유효성 검사를 하려면 form 내에 있어야한다.  
+            form 안에서 엔터 누르고 input이 더 존재하지 않으면 자동 submit 됨
+        -->
+        <input 
+        required
+        maxlength="15"
+        type="text" 
+        placeholder="What is your name?" />
+        <input type="submit" value="Log In"></input>
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+    <form id="todo-form">
+        <input type="text" placeholder="Write a To Do and Press Enter" required>
+    </form>
+    <ul id="todo-list"></ul>
+    <!-- <a href="https://nomadcoders.co">Go to courses</a> -->
+    <h2 id="clock">00:00</h2>
+    <div id="quote">
+        <span></span>
+        <span></span>
+    </div>
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>
